@@ -6,8 +6,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 public class GHappyTest {
-    //@ParameterizedTest(name= "str={0}, expectedResult={1}")
-    // @CsvSource("'xxggxx', 'true'", "'xxgxx', 'false'", "'xxggyygxx', 'false'")
     @Test
     public void doubleGInTheMiddle() {
         GHappy gh  = new GHappy();
