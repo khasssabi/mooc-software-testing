@@ -17,4 +17,22 @@ public class CountLettersTest {
         Assertions.assertEquals(1, words);
     }
 
+    @Test
+    public void lastLetterR() {
+        int words = new CountLetters().count("beaver");
+        Assertions.assertEquals(1, words);
+    }
+
+    @Test
+    public void BothWordsEndWithRandS() {
+        int words = new CountLetters().count("jaguar runs");
+        Assertions.assertEquals(2, words);
+    }
+
+    @Test
+    public void firstTwoWordsDoNotMatch() {
+        int words = new CountLetters().count("huntsman-the-spider");
+        Assertions.assertEquals(1, words);
+    }
+
 }
