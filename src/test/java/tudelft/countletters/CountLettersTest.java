@@ -35,4 +35,10 @@ public class CountLettersTest {
         Assertions.assertEquals(1, words);
     }
 
+    @Test
+    public void withApostrophe() {
+        int words = new CountLetters().count("Piotr's family");
+        Assertions.assertEquals(2, words);
+    }
+
 }
